@@ -67,7 +67,7 @@ async function rekeytosingle(address,mnemonic,new_wallet=undefined){
             mnemonics=sig_accounts.map(account=>algosdk.secretKeyToMnemonic(account['sk']))
         }
         return {
-            'sk':account['sk'],
+            'sk':account['sk']||algosdk.mnemonicToSecretKey(new_wallet['mnemonic'])['sk'],
             'mnemonic':mnemonics||account['mnemonic']
         }
     } catch (error) {
@@ -115,7 +115,7 @@ async function rekeytomultisig(address,mnemonic,no_of_accounts,accounts=undefine
             mnemonics=sig_accounts.map(account=>algosdk.secretKeyToMnemonic(account['sk']))
         }
         return {
-            'sk':sig_accounts.map(account=>account['sk']),
+            'sk':sig_accounts.map(account=>account['sk']||algosdk.mnemonicToSecretKey(account['mnemonic'])['sk']),
             'mnemonic':sig_accounts.map(account=>mnemonics||account['mnemonic'])
         }
     } catch (error) {
