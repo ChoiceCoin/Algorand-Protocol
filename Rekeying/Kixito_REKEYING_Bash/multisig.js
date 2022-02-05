@@ -31,9 +31,9 @@ const waitForConfirmation = async function (algodclient, txId, timeout) {
 };
 
 const token = {
-    "X-API-Key": "nq1M8RDrIK6CqmXvgdctW1mvuhvgI3nLO2bAk8Aa"
+    "X-API-Key": ""
 }
-const server = "https://testnet-algorand.api.purestake.io/ps2";
+const server = "h";
 const port = "";
 
 const keypress = async () => {
