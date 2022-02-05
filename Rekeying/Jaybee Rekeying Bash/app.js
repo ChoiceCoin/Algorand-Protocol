@@ -1,5 +1,4 @@
 //importing the neccesary modules
-const express=require("express")
 const algosdk=require('algosdk');
 //This helps in connecting the client with the algorand network
 const algoServer='https://testnet-algorand.api.purestake.io/ps2'
