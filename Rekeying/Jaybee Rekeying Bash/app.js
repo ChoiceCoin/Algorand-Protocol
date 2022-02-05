@@ -5,14 +5,14 @@ const algosdk=require('algosdk');
 const algoServer='https://testnet-algorand.api.purestake.io/ps2'
 const algoPort='';
 const token = {
-    'X-API-Key': 'Xy8NsXxfJg2cQ2YQ4pax6aLrTcj55jZ9mbsNCM30'//Your APi key here
+    'X-API-Key': ''//Your APi key here
  }
 let algoClient = new algosdk.Algodv2(token, algoServer, algoPort);
 const CHOICE_ASSET_ID = 21364625;
 
 
-const address="XLTXHQQQ6HGUASJYXARHNFEKVW6XSNZAE6OG7OS557OGJUYQH2X3KTHLSQ"
-const mnemonic='brother fan month veteran purity rotate torch gun smart grass shield dragon unable melody still canoe curious acid slim honey other reveal detect abandon walk'
+const address=""
+const mnemonic=''
 
 
 //function to validate wallet address and menemonic
@@ -131,7 +131,7 @@ async function check(address){
 }
 
 
-rekeytomultisig(address,mnemonic,3)
+// rekeytomultisig(address,mnemonic,3)
 
 // check(address)//check effects 
 
