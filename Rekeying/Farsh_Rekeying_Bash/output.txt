@@ -1,0 +1,43 @@
+Private key: VU/98kcxRqAtoGVVO9Zv5hDnC0JC57jIfOtJV2LxL6+VrzvzJA60ALiET5QVLJI63edJ5SsHgnsW28vvgGp5Yg==
+Address: SWXTX4ZEB22ABOEEJ6KBKLESHLO6OSPFFMDYE6YW3PF67ADKPFRDBK5ASA
+Mnemonic: turkey vivid west behave midnight gym accident grant height flight dawn attack soda load bamboo trap blade veteran volcano innocent seven wisdom just absent device
+Please go to: https://dispenser.testnet.aws.algodev.network/?account=SWXTX4ZEB22ABOEEJ6KBKLESHLO6OSPFFMDYE6YW3PF67ADKPFRDBK5ASA to fund reserved account
+Press Enter Key to continue after funding
+Successfully sent transaction with txID: DAKNZYFP5FWFSOPX5GGB5EIIKNUQDZMLDFHN2PEQEWCNINJZTDKA
+Rekeyed: SWXTX4ZEB22ABOEEJ6KBKLESHLO6OSPFFMDYE6YW3PF67ADKPFRDBK5ASA
+ to a multisig account: RBSTLLHK2NJDL3ZH66MKSEX3BE2OWQ43EUM7S7YRVBJ2PRDRCKBSDD3YD4 Successfully!!!!
+Proceed to carry out further transaction
+Transaction information: {
+    "confirmed-round": 19565833,
+    "pool-error": "",
+    "txn": {
+        "msig": {
+            "subsig": [
+                {
+                    "pk": "ajRBrfpWcH9fCxEzJHZSdqZQ4xvMO4gRuAGSU128AU4=",
+                    "s": "vIgBRd4KRIM93ZekzeSKvqeiFu1wNC6WeoxS3UzQDBvMOQgZYk1eayNqWZQZknr4ufKDC+b+NQTnUhGNIe6tBA=="
+                },
+                {
+                    "pk": "X0lHiLyLlNywBN/j0uNT6MumbbXC3qka06KqmNDItyI=",
+                    "s": "S7QQv7jwmjGZ+TzmVk72IEsbtagugy9IoQyGQjE22NFRboP+FNsS5XmUzjp3sCRLtkFRSQUJxz0XJVxDAngDDA=="
+                }
+            ],
+            "thr": 2,
+            "v": 1
+        },
+        "sgnr": "RBSTLLHK2NJDL3ZH66MKSEX3BE2OWQ43EUM7S7YRVBJ2PRDRCKBSDD3YD4",
+        "txn": {
+            "amt": 10000,
+            "fee": 1000,
+            "fv": 19565817,
+            "gen": "testnet-v1.0",
+            "gh": "SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9/cOUJOiI=",
+            "lv": 19566817,
+            "note": "SGVsbG8gTXVsdGlzaWc=",
+            "rcv": "AMF3CVE4MFZM24CCFEWRCOCWW7TEDJQS3O26OUBRHZ3KWKUBE5ZJRNZ3OY",
+            "snd": "SWXTX4ZEB22ABOEEJ6KBKLESHLO6OSPFFMDYE6YW3PF67ADKPFRDBK5ASA",
+            "type": "pay"
+        }
+    }
+}
+Decoded note: Hello Multisig
