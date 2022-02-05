@@ -62,8 +62,8 @@ print("Multisig Address: ", msig.address())
 print("Please go to: https://bank.testnet.algorand.network/ to fund multisig account. ", msig.address())
 
 
-algod_address = "https://testnet-algorand.api.purestake.io/ps2"
-algod_token = "nq1M8RDrIK6CqmXvgdctW1mvuhvgI3nLO2bAk8Aa"
+algod_address = ""  # enter your algod_address here
+algod_token = ""    # add your algod_token here
 headers = {
     "X-API-Key": algod_token,
 }
