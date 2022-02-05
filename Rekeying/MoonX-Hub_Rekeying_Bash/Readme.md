@@ -1,4 +1,4 @@
-#Algorand Rekeying
+# Algorand Rekeying
 
 
 ```
@@ -10,9 +10,9 @@
 }
 ```
 
-#Conclusion
+# Conclusion
 
-###Overview
+### Overview
 
 Rekeying is a powerful protocol feature which enables an Algorand account holder to maintain a static public address while dynamically rotating the authoritative private spending key(s).
 
