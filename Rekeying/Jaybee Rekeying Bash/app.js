@@ -51,8 +51,8 @@ async function rekeytosingle(address,mnemonic,new_wallet=undefined){
         const params=await algoClient.getTransactionParams().do()//getting transaction parameters
         let enc=new TextEncoder()
         const note=enc.encode("Rekey")
-        const newkey_account=account['addr']||new_wallet['addr']
-        let txn=algosdk.makePaymentTxnWithSuggestedParams(address,address,0,undefined,note,params,newkey_account)//creating the rekey transaction
+        const newkey_account=account||new_wallet
+        let txn=algosdk.makePaymentTxnWithSuggestedParams(address,address,0,undefined,note,params,newkey_account['addr'])//creating the rekey transaction
         console.log(txn)
         const main_key=algosdk.mnemonicToSecretKey(mnemonic)['sk']
         let signedTxn= txn.signTxn(main_key)
