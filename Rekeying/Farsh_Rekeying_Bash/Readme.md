@@ -107,6 +107,8 @@ print("Rekeyed: "+ reserved_address + "\n to a multisig account: " + msig.addres
 
 The output in the terminal would look like:
 
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Rekeying/Farsh_Rekeying_Bash/images/1.jpg)
+
 > Note that, In order to complete the rekey transaction a minimum of 1000 microAlgo for the fee is required, and a further 1000 microAlgo to demonstrate the use of our rekeyed account. After funding the reserved address, the rekeying would be done successfully.
 
 ### Testing
@@ -144,6 +146,8 @@ except Exception as err:
 ```
 
 And this would successfully send 1 algo from the reserved address(rekeyed to a multisig) to the third account `account_3` and duly signed by the two private keys. Check the output in the terminal below:
+
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Rekeying/Farsh_Rekeying_Bash/images/2.jpg)
 
 ### Added Bonus
 
