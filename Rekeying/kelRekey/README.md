@@ -1,4 +1,4 @@
-# XCITY REKEYING BASH SUBMISSION
+# kel REKEYING BASH SUBMISSION
 
 Rekeying is a powerful protocol feature which enables an Algorand account holder to maintain a static public address while dynamically rotating the authoritative private spending key(s). This is accomplished by issuing a "rekey-to transaction" which sets the authorized address field within the account object. Future transaction authorization using the account's public address must be provided by the spending key(s) associated with the authorized address which may be a single key address, MultiSig address or LogicSig program address. Key management is an important concept to understand and Algorand provides tools to accomplish relevant tasks securely.
 
