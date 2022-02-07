@@ -1,0 +1,16 @@
+{
+  "name": "Salewa_REKEY_Bash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "algosdk": "^1.13.1",
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
