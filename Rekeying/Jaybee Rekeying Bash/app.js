@@ -1,6 +1,4 @@
 //importing the neccesary modules
-const express=require("express")
-const app=express()
 const algosdk=require('algosdk');
 //This helps in connecting the client with the algorand network
 const algoServer='https://testnet-algorand.api.purestake.io/ps2'
@@ -12,9 +10,8 @@ let algoClient = new algosdk.Algodv2(token, algoServer, algoPort);
 const CHOICE_ASSET_ID = 21364625;
 
 
-
-const main_address=""//address goes here
-const main_mnemonic=""//25 word pattern goes here
+const address=""
+const mnemonic=''
 
 
 //function to validate wallet address and menemonic
@@ -53,8 +50,8 @@ async function rekeytosingle(address,mnemonic,new_wallet=undefined){
         const params=await algoClient.getTransactionParams().do()//getting transaction parameters
         let enc=new TextEncoder()
         const note=enc.encode("Rekey")
-        const newkey_account=new_wallet['addr']||account['addr']
-        let txn=algosdk.makePaymentTxnWithSuggestedParams(address,address,0,undefined,note,params,newkey_account)//creating the rekey transaction
+        const newkey_account=account||new_wallet
+        let txn=algosdk.makePaymentTxnWithSuggestedParams(address,address,0,undefined,note,params,newkey_account['addr'])//creating the rekey transaction
         console.log(txn)
         const main_key=algosdk.mnemonicToSecretKey(mnemonic)['sk']
         let signedTxn= txn.signTxn(main_key)
@@ -64,7 +61,7 @@ async function rekeytosingle(address,mnemonic,new_wallet=undefined){
         let confirmedTxn=await waitForConfirmation(algoClient,txn.txID(),5)  
         var mnemonics=undefined
         if(!new_wallet){
-            mnemonics=sig_accounts.map(account=>algosdk.secretKeyToMnemonic(account['sk']))
+            mnemonics=algosdk.secretKeyToMnemonic(account['sk'])
         }
         return {
             'sk':account['sk']||algosdk.mnemonicToSecretKey(new_wallet['mnemonic'])['sk'],
@@ -83,8 +80,9 @@ async function rekeytomultisig(address,mnemonic,no_of_accounts,accounts=undefine
         if(!is_valid['status']){
             return is_valid['message']
         }
+        let gen_sig_accounts=undefined
         if(!accounts){
-            const gen_sig_accounts=[]
+            gen_sig_accounts=[]
             for(let i=0;i<no_of_accounts;i++){
                 let account=algosdk.generateAccount()
                 gen_sig_accounts.push(account)
@@ -132,23 +130,9 @@ async function check(address){
 }
 
 
+// rekeytomultisig(address,mnemonic,3)
 
-//enter respective public addresses and 
-// rekeytomultisig(main_address,main_mnemonic,0,[
-//     {
-//       addr: '',
-//       sk:'hello'},
-//     {
-//       addr: '',
-//       sk:''
-//     },
-//     {
-//       addr: '',
-//       sk:'',}
-   
-//   ]
-//   )
-check(main_address)//check effects 
+// check(address)//check effects 
 
 
 //wait for confirmation 
