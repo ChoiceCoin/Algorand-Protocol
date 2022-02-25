@@ -22,7 +22,7 @@ Pooled transaction fees - One transaction pays the fees of others.
 
 ```pip install py-algorand-sdk``` 
 
-```python atomic-transfer.py```
+```python atomic_transfer.py```
 
 ### Transaction Information 
 
