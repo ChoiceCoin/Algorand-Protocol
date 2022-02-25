@@ -1,8 +1,17 @@
-# FARSH_NFT_BASH SUBMISSION
+# FARSH_ATOMIC TRANSFER SUBMISSION
 
-Non-Fungible tokens are a configurable subset of Algorand Standard Assets (ASA) to represent regular or decentralized digital assets.
+An Atomic Transfer is an operation that allows multiple transactions which are compiled as one to either succed or fail as a whole.
+On Algorand, atomic transfers are implemented as irreducible batch operations, where a group of transactions are submitted as a unit and all transactions in the batch either pass or fail.
 
-NFTs are created using Algorand Standard Assets (ASAs), which are built into the protocol and created using a special type of transaction. This is distinct from some other blockchains where a smart contract is necessary to represent assets.
+Atomic transfers enable use cases such as:
+Circular trades - Alice pays Bob if and only if Bob pays Claire if and only if Claire pays Alice.
+Group payments - Everyone pays or no one pays.
+Decentralized exchanges - Trade one asset for another without going through a centralized exchange.
+Distributed payments - Payments to multiple recipients.
+Pooled transaction fees - One transaction pays the fees of others.
+
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
 
 ## RUN ON YOUR LOCAL MACHINE
 
@@ -28,27 +37,32 @@ NFTs are created using Algorand Standard Assets (ASAs), which are built into the
 
 ## check preview video link
 
-- check video on [here](https://www.awesomescreenshot.com/video/7082696?key=34edd796f5c8c3a1f75f9b2b9e914fa9)
+- check video on [here](https://www.awesomescreenshot.com/video/7605378?key=5e006e6360495b5ee0d050653aec551b)
+
+## Transaction on ALGOEXPLORER Testnet 
+
+- https://testnet.algoexplorer.io/tx/IPAAC5ZGKJWYJRVQNJIU662E5DWGFLBTYSY4XKU4HECC3ADLM7TQ
+
 
 ## check Live link
 
-- check Live link [here](https://limitless-badlands-35979.herokuapp.com/)
+- check Live link [here](https://atomic-transfer.herokuapp.com/)
 
 ## Functionalities
 
-- [x] User has to connect his algorand wallet
-- [x] User has to send $choice before generating NFT.
-- [x] User has to upload an image file
-- [x] User has to Set NFT Name
-- [x] Transaction Id would be displayed on the screen
-- [x] Pinata link for the generated NFT would be displayed on the screen
+- [x] (a) Loading two existing accounts… (Remember to fund the two accounts with Testnet Algos)
+- [x] (b) Create a new account (This will be auto-generated)
+- [x] (c) Generate a mnemonic for the created account
+- [x] (d) Expose the Initial balances of the two existing accounts
+- [x] (e) Send a Transaction
+- [x] (f) Sign the Transaction
+- [x] (g) Display the Transaction Information in a JSON format
+- [x] (h) Show the transaction on AlgoExplorer
 
 ## Technology used
 
 - Boostrap
 - Font Awesome
-- Pinata
 - NodeJs
 - EJS
 - Algorand
-- Cloudinary
