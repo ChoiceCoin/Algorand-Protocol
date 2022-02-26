@@ -12,7 +12,7 @@ $ npm install
 - rename the .env_sample file to .env and input your credentials into the file
 - Start App
 ```sh
-$ node index.js / npm start
+$ node index.js or npm start
 ```
 
 ## Video Preview
