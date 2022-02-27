@@ -3,7 +3,7 @@
 An Atomic Transfer is an operation that allows multiple transactions which are compiled as one to either succed or fail as a whole.
 On Algorand, atomic transfers are implemented as irreducible batch operations, where a group of transactions are submitted as a unit and all transactions in the batch either pass or fail.
 
-This Bash execute Atomic transfer that enables Group payments to two different wallets.
+This Bash execute Atomic transfer that performs Distributed payments i.e Payments to multiple recipients.
 
 ![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
 ![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
