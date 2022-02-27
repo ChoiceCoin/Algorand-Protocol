@@ -39,10 +39,13 @@ Pooled transaction fees - One transaction pays the fees of others.
 
 - check video on [here](https://www.awesomescreenshot.com/video/7605378?key=5e006e6360495b5ee0d050653aec551b)
 
-## Transaction on ALGOEXPLORER Testnet 
+## Transaction on ALGOEXPLORER Testnet
 
 - https://testnet.algoexplorer.io/tx/IPAAC5ZGKJWYJRVQNJIU662E5DWGFLBTYSY4XKU4HECC3ADLM7TQ
 
+## Transaction Info
+
+- Check the console for the information of the last transaction
 
 ## check Live link
 
