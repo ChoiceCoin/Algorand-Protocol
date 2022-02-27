@@ -3,15 +3,12 @@
 An Atomic Transfer is an operation that allows multiple transactions which are compiled as one to either succed or fail as a whole.
 On Algorand, atomic transfers are implemented as irreducible batch operations, where a group of transactions are submitted as a unit and all transactions in the batch either pass or fail.
 
-Atomic transfers enable use cases such as:
-Circular trades - Alice pays Bob if and only if Bob pays Claire if and only if Claire pays Alice.
-Group payments - Everyone pays or no one pays.
-Decentralized exchanges - Trade one asset for another without going through a centralized exchange.
-Distributed payments - Payments to multiple recipients.
-Pooled transaction fees - One transaction pays the fees of others.
+## SOLUTION
+This Bash execute Atomic transfer that performs Distributed payments i.e Payments to multiple recipients.
 
-![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
-![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/3.jpg)
 
 ## RUN ON YOUR LOCAL MACHINE
 
@@ -39,10 +36,13 @@ Pooled transaction fees - One transaction pays the fees of others.
 
 - check video on [here](https://www.awesomescreenshot.com/video/7605378?key=5e006e6360495b5ee0d050653aec551b)
 
-## Transaction on ALGOEXPLORER Testnet 
+## Transaction on ALGOEXPLORER Testnet
 
 - https://testnet.algoexplorer.io/tx/IPAAC5ZGKJWYJRVQNJIU662E5DWGFLBTYSY4XKU4HECC3ADLM7TQ
 
+## Transaction Info
+
+- Check the console for the information of the last transaction
 
 ## check Live link
 

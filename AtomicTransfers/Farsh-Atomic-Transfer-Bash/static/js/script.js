@@ -32,11 +32,23 @@ const addresses = [address1, address2];
 const balances = [];
 let isloading = true;
 const getWalletType = localStorage.getItem("wallet-type");
-const lastInfo = localStorage.getItem("Transaction Id");
-!lastInfo
-  ? (document.getElementById("txId").textContent =
-      "Carry out your first Transaction to display Info...")
-  : (document.getElementById("txId").textContent = lastInfo);
+const lastId = localStorage.getItem("Transaction Id");
+const lastInfo = localStorage.getItem("Transaction Info");
+
+if (!lastInfo) {
+  document.getElementById("txId").textContent =
+    "Carry out your first Transaction to display Id...";
+  // document.getElementById("txInfo").textContent =
+  //   "Carry out your first Transaction to display Info...";
+  console.log(
+    "Last Transaction Info",
+    "Carry out your first Transaction to display Info..."
+  );
+} else {
+  document.getElementById("txId").textContent = lastId;
+  // document.getElementById("txInfo").textContent = lastInfo;
+  console.log(`Last Transaction Info is ${lastInfo}`);
+}
 
 let txns = [];
 let base64Txns = [];
@@ -135,7 +147,9 @@ const myAlgoSignerSign = async () => {
         loader();
         console.log("Txns", txns);
         localStorage.setItem("Transaction Id", JSON.stringify(response));
-        document.getElementById("txId").textContent = lastInfo;
+        localStorage.setItem("Transaction Info", JSON.stringify(txns));
+        document.getElementById("txId").textContent = lastId;
+        // document.getElementById("txInfo").textContent = lastInfo;
         setTimeout(() => {
           window.location.href = "/";
         }, 2000);
@@ -172,7 +186,9 @@ const myAlgoSignerSign = async () => {
         isloading = false;
         loader();
         localStorage.setItem("Transaction Id", JSON.stringify(response));
-        document.getElementById("txId").textContent = lastInfo;
+        localStorage.setItem("Transaction Info", JSON.stringify(txns));
+        document.getElementById("txId").textContent = lastId;
+        // document.getElementById("txInfo").textContent = lastInfo;
         setTimeout(() => {
           window.location.href = "/";
         }, 2000);
