@@ -10,8 +10,9 @@ Decentralized exchanges - Trade one asset for another without going through a ce
 Distributed payments - Payments to multiple recipients.
 Pooled transaction fees - One transaction pays the fees of others.
 
-![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
-![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/1.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/2.jpg)
+![Output Image ](https://github.com/farsh268/Algorand-Protocol-1/blob/main/AtomicTransfers/Farsh-Atomic-Transfer-Bash/static/image/3.jpg)
 
 ## RUN ON YOUR LOCAL MACHINE
 
