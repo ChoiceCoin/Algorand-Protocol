@@ -17,6 +17,10 @@ Current wallet connection on Algorand has two major security problems and vulner
 1. Hackers are able to view address information remotely.
 2. There is an inherent ambiguity in the Disconnect function in many Algorand applications.
 
+# Goal
+
+The goal for this project is to develop a secure wallet connection resource for open source development and use.
+
 # Solution
 
 The purpose for this project is to develop a simplified and scalable methodology for developing wallet connection mechanisms with Algorand applications.
