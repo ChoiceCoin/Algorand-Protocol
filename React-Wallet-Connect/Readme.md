@@ -6,7 +6,7 @@ Project intended to create a simplified, easy, and secure web connection method 
 
 [Algorand JS-SDK Docs](https://developer.algorand.org/docs/sdks/javascript/) | 
 [Wallet Connect Docs](https://developer.algorand.org/docs/get-details/walletconnect/) |
-[Pera Connect](https://github.com/perawallet/connect)
+[Pera Connect](https://github.com/perawallet/connect) | [PeraWallet Connect Docs](https://docs.perawallet.app/references/pera-connect/)
 
 # Problem
 
