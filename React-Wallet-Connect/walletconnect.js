@@ -1,5 +1,3 @@
-// Easy and simplified JS software for connecting Pera Wallet.
-
 // Imports
 import './App.css';
 
@@ -9,7 +7,17 @@ function WalletConnect() {
     console.log('Connect')
   }
   return(
-    <button onClick={wallet}>Connect Wallet</button>
+    <button onClick={wallet}>Connect Address</button>
+  )
+};
+
+// Wallet Disconnect
+function WalletDisconnect() {
+  const wallet = () => {
+    console.log('Connect')
+  }
+  return(
+    <button onClick={wallet}>Disconnect Address</button>
   )
 };
 
@@ -24,10 +32,12 @@ function App() {
         <div>
           <WalletConnect />
         </div>
+        <div>
+          <WalletDisconnect />
+        </div>
       </header>
     </div>
   );
 }
 
 export default App;
-
