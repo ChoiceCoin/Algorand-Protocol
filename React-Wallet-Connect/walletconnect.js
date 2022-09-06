@@ -14,7 +14,7 @@ function WalletConnect() {
 // Wallet Disconnect
 function WalletDisconnect() {
   const wallet = () => {
-    console.log('Connect')
+    console.log('Disconnect')
   }
   return(
     <button onClick={wallet}>Disconnect Address</button>
