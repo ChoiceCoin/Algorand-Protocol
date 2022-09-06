@@ -29,5 +29,5 @@ The goal for this project is to develop a secure wallet connection resource for 
 
 The purpose for this project is to develop a simplified and scalable methodology for developing wallet connection mechanisms with Algorand applications. The solution will:
 
-1. Allow a user to click a connect address button to connect their address.
+1. Allow a user to click a connect address button to recieve a QR code to scan and connect their address.
 2. Allow a user to click a disconnect address button to disconnect their address.
