@@ -14,6 +14,7 @@ A major problem on the Algorand blockchain is the lack of scalable and secure op
 The problem with the existing solutions is that they use too much unnecesary code, which creates vulnerabilities and makes it difficult to use for open source development because the convolutions create difficulty for developers.
 
 [PeraWallet Issue](https://github.com/perawallet/connect/issues/32)
+[PeraWallet Issue2](https://github.com/perawallet/connect-examples/issues/2)
 
 # Issues
 Current wallet connection on Algorand has two major security problems and vulnerabilities.
