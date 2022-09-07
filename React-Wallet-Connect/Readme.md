@@ -15,6 +15,8 @@ The problem with the existing solutions is that they use too much unnecesary cod
 
 [PeraWallet Issue](https://github.com/perawallet/connect/issues/32)
 
+[PeraWallet Issue2](https://github.com/perawallet/connect-examples/issues/2)
+
 # Issues
 Current wallet connection on Algorand has two major security problems and vulnerabilities.
 
