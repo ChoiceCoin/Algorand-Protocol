@@ -33,3 +33,7 @@ The purpose for this project is to develop a simplified and scalable methodology
 
 1. Allow a user to click a connect address button to recieve a QR code to scan and connect their address.
 2. Allow a user to click a disconnect address button to disconnect their address.
+
+# User Interface
+<img width="778" alt="Screen Shot 2022-09-07 at 9 14 24 PM" src="https://user-images.githubusercontent.com/43055154/189033099-ba7362ff-6189-4f27-8342-74f6dfd450a1.png">
+
