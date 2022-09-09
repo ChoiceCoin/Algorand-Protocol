@@ -1,5 +1,7 @@
 # Choice Connect
 
+[New Choice Coin Connect Repository](https://github.com/ChoiceCoin/Algorand-Protocol/tree/main/choiceconnect)
+
 Project intended to create a simplified, easy, and secure web connection method for Pera Wallet. 
 
 [Algorand Forum Post](https://forum.algorand.org/t/choice-coin-connect-for-algorand-addresses/7796)
