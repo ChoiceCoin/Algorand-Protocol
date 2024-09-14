@@ -23,7 +23,7 @@ We am working on an application in the JS-SDK with React. The Application allows
 
 # Solution
 
-We am exploring several solutions for this problem. The first solution I tried was to use a secure key variable for storage. However, during penetration testing, We discovered it was possible to read the private key.
+We am exploring several solutions for this problem. The first solution I tried was to use a secure key variable for storage. However, during penetration testing, we discovered it was possible to read the private key.
 
 Another solution We am considering is using a .env file, however it seems this may have a similar result as the first option because ultimately, the key needs to be sent to the application. Even if the key is encrypted and not visible in the ```App.js``` file or HTML, the key would likely be visible upon deeper inspection into the network files.
 
